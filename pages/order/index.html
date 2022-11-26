@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Book-shop</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link href="../../assets/styles/style.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../../assets/icon.png">
+</head>
+
+<body id="body">
+    <header>
+        <img src="../../assets/Шапка.png" id="hat">
+    </header>
+    <form class="form card">
+        <h2>Confirm order</h2>
+        <div class="input-box">
+            <label>Name: </label>
+            <input placeholder="Name" class="validated" id="input-name" type="text" required pattern="[a-zA-Z]{4,}">
+        </div>
+        <div class="input-box">
+            <label>Surname: </label>
+            <input placeholder="Surname" class="validated" id="input-surname" type="text" required pattern="[a-zA-Z]{5,}">
+        </div>
+        <div class="input-box">
+            <label>Delivery Date:</label>
+            <input class="validated" id="input-date" type="date" required>
+        </div>
+        <div class="input-box">
+            <label>Street: </label>
+            <input placeholder="Street" class="validated" type="text" required pattern="[a-zA-Z\d]{5,}">
+        </div>
+        <div class="input-box">
+            <label>House number: </label>
+            <input placeholder="House number" class="validated" type="number" required min="1">
+        </div>
+        <div class="input-box">
+            <label>Flat number: </label>
+            <input placeholder="Flat number" class="validated" type="text" required
+                pattern="([123456789]+-)?[123456789]+">
+        </div>
+        <div class="input-box">
+            <label>Payment type: </label>
+            <div class="input-box-radio">
+                <label class="label-radio"><input type="radio" required name="payment-type" checked value="cash">
+                    Cash</label>
+                <label class="label-radio"><input type="radio" required name="payment-type" value="card">
+                    Card</label>
+            </div>
+        </div>
+        <div class="input-checkbox-block">
+            <label>Pick 2 gifts (optional): </label>
+            <div class="input-checkbox">
+                <label class="label-checkbox"><input type="checkbox" value="cash"> Pack as a
+                    gift</label>
+                <label class="label-checkbox"><input type="checkbox" value="card"> Add postcard</label>
+                <label class="label-checkbox"><input type="checkbox" value="card"> Provide 2% discount
+                    to the next time</label>
+                <label class="label-checkbox"><input type="checkbox" value="card"> Branded pen or
+                    pencil</label>
+            </div>
+        </div>
+        <div class="input-box btn-submit">
+            <input type="submit" value="Confirm order" class="btn-order"></input>
+        </div>
+    </form>
+</body>
+
+<script src="main.js"></script>
+<script src="order.js"></script>
