@@ -32,10 +32,9 @@
 
 .input-box-radio{
     height: 36px;
-    width: 60%;
+    width: 50%;
     display: flex;
     justify-content: space-around;
-    margin: 0 auto;
 }
 
 .label-radio{
